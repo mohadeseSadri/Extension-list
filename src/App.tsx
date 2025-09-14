@@ -1,12 +1,13 @@
 import './App.css';
 import Header from './Components/Header';
-
+import Category from './Components/Category';
 function App() {
   
 
   return (
     <>
       <Header />
+      <Category />
     </>
   )
 }
