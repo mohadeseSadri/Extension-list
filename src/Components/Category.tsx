@@ -2,7 +2,7 @@ function Category() {
   return (
     <>
       <section className="flex justify-center">
-        <div className="m-5 flex w-[80%] justify-between">
+        <div className="m-3 flex w-[80%] justify-between">
           <header>
             <h2 className="text-2xl font-bold">Extensions List</h2>
           </header>
