@@ -1,4 +1,13 @@
-function Category() {
+type FilterType = "all" | "active" | "inactive";
+
+interface FilterButtonsProps {
+  filter: FilterType;
+  setFilter: (filter: FilterType) => void;
+}
+
+function Category({ filter, setFilter }: FilterButtonsProps) {
+  const buttons: FilterType[] = ["all", "active", "inactive"];
+
   return (
     <>
       <section className="flex justify-center">
@@ -9,15 +18,23 @@ function Category() {
 
           <ul>
             <li>
-              <button className="mx-1 rounded-2xl bg-[#1F2535] px-3 py-1">
-                All
-              </button>
-              <button className="mx-1 rounded-2xl bg-[#1F2535] px-3 py-1">
-                Active
-              </button>
-              <button className="mx-1 rounded-2xl bg-[#1F2535] px-3 py-1">
-                Inactive
-              </button>
+              {buttons.map((btn) => (
+                <button
+                  key={btn}
+                  type="button"
+                  onClick={() => setFilter(btn)}
+                  aria-pressed={filter === btn}
+                  className={`mx-1 rounded-2xl bg-[#1F2535] px-3 py-1 ${
+                    filter === btn
+                      ? "bg-red-500 text-white"
+                      : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+                  }`}
+                >
+                  {btn.charAt(0).toUpperCase() + btn.slice(1)}
+                </button>
+              ))}
+
+              
             </li>
           </ul>
         </div>
