@@ -36,8 +36,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchDevLens(!isSwitchDevLens)}
-              isOpen={isSwitchDevLens}
+              onToggle={() => setSwitchDevLens(!isSwitchDevLens)}
+              active={isSwitchDevLens}
             />
           </article>
 
@@ -52,8 +52,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchStyleSpy(!isSwitchStyleSpy)}
-              isOpen={isSwitchStyleSpy}
+              onToggle={() => setSwitchStyleSpy(!isSwitchStyleSpy)}
+              active={isSwitchStyleSpy}
             />
           </article>
 
@@ -68,8 +68,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchSpeed(!isSwitchSpeed)}
-              isOpen={isSwitchSpeed}
+              onToggle={() => setSwitchSpeed(!isSwitchSpeed)}
+              active={isSwitchSpeed}
             />
           </article>
 
@@ -84,8 +84,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchJSON(!isSwitchJSON)}
-              isOpen={isSwitchJSON}
+              onToggle={() => setSwitchJSON(!isSwitchJSON)}
+              active={isSwitchJSON}
             />
           </article>
 
@@ -100,8 +100,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchTabMaster(!isSwitchTabMaster)}
-              isOpen={isSwitchTabMaster}
+              onToggle={() => setSwitchTabMaster(!isSwitchTabMaster)}
+              active={isSwitchTabMaster}
             />
           </article>
 
@@ -116,8 +116,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchViewPort(!isSwitchViewPort)}
-              isOpen={isSwitchViewPort}
+              onToggle={() => setSwitchViewPort(!isSwitchViewPort)}
+              active={isSwitchViewPort}
             />
           </article>
 
@@ -132,8 +132,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchMarkup(!isSwitchMarkup)}
-              isOpen={isSwitchMarkup}
+              onToggle={() => setSwitchMarkup(!isSwitchMarkup)}
+              active={isSwitchMarkup}
             />
           </article>
 
@@ -148,8 +148,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchGrid(!isSwitchGrid)}
-              isOpen={isSwitchGrid}
+              onToggle={() => setSwitchGrid(!isSwitchGrid)}
+              active={isSwitchGrid}
             />
           </article>
 
@@ -164,8 +164,8 @@ function AllExtensions() {
             </header>
 
             <ToggleSwitch
-              onClick={() => setSwitchPlette(!isSwitchPlette)}
-              isOpen={isSwitchPlette}
+              onToggle={() => setSwitchPlette(!isSwitchPlette)}
+              active={isSwitchPlette}
             />
           </article>
 

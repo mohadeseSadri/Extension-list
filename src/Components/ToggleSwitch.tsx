@@ -1,11 +1,11 @@
 import clsx from "clsx";
 
-type AllExtensionsProps = {
-  isOpen?: boolean;
-  onClick: () => void;
+interface AllExtensionsProps {
+  active?: boolean;
+  onToggle: () => void;
 };
 
-function ToggleSwitch({ isOpen = true, onClick }: AllExtensionsProps) {
+function ToggleSwitch({ active = true, onToggle }: AllExtensionsProps) {
   return (
     <>
       <footer className="flex justify-between">
@@ -14,17 +14,17 @@ function ToggleSwitch({ isOpen = true, onClick }: AllExtensionsProps) {
         </button>
 
         <button
-          onClick={onClick}
+          onClick={onToggle}
           className={clsx(
             "item-center flex h-7 w-12 cursor-pointer rounded-full opacity-75 hover:opacity-100",
-            isOpen ? "bg-red-500" : "bg-gray-400",
+            active ? "bg-red-500" : "bg-gray-400",
           )}
-          aria-pressed={isOpen}
+          aria-pressed={active}
         >
           <div
             className={clsx(
               "m-1 h-5 w-5 rounded-full bg-white transition-all",
-              isOpen ? "translate-x-full" : "translate-x-0",
+              active ? "translate-x-full" : "translate-x-0",
             )}
           ></div>
         </button>
