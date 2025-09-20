@@ -9,9 +9,6 @@ function ToggleSwitch({ active = true, onToggle }: AllExtensionsProps) {
   return (
     <>
       <footer className="flex justify-between">
-        <button className="rounded-2xl border border-2 border-gray-600 px-2 py-1">
-          Remove
-        </button>
 
         <button
           onClick={onToggle}
