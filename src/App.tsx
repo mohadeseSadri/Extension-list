@@ -1,13 +1,12 @@
 import "./App.css";
 import Header from "./Components/Header";
-import Category from "./Components/Category";
-import AllExtensions from "./Components/AllExtensions";
+import ExtensionList from "./Components/ExtensionList";
 function App() {
   return (
     <>
       <Header />
-      <Category />
-      <AllExtensions />
+      
+      <ExtensionList />
     </>
   );
 }
