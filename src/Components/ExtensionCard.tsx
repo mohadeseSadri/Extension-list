@@ -1,3 +1,4 @@
+import { useExtensionsStore } from "../store/extensionStore";
 import ToggleSwitch from "./ToggleSwitch";
 
 interface Extension {
@@ -14,6 +15,7 @@ interface ExtensionCardProps {
 }
 
 function ExtensionCard({ extension, onToggle }: ExtensionCardProps) {
+  const { hideExtension } = useExtensionsStore();
   return (
     <>
       <div className="flex flex-col justify-between rounded-lg bg-gray-800 p-4 shadow">
@@ -28,7 +30,7 @@ function ExtensionCard({ extension, onToggle }: ExtensionCardProps) {
         </section>
 
         <div className="mt-4 flex items-center justify-between">
-          <button className="rounded-2xl border border-2 border-gray-600 px-2 py-1">
+          <button onClick={() => hideExtension(extension.id)} className="rounded-2xl border border-2 border-gray-600 px-2 py-1">
             Remove
           </button>
           <ToggleSwitch
