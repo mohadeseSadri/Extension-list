@@ -17,12 +17,13 @@ export type Extension = {
   };
   
   type ExtensionState = {
-    hide: Extension[];
+    extensions: Extension[];
+    setExtensions: (updater: (prev: Extension[]) => Extension[]) => void;
     hideExtension: (id: number) => void;
   };
 
   export const useExtensionsStore = create<ExtensionState>((set) => ({
-    hide: [
+    extensions: [
       {
         id: 1,
         name: "DevLens",
@@ -74,9 +75,11 @@ export type Extension = {
         visible: true,
       },
     ],
+    setExtensions: (updater) =>
+      set((state) => ({ extensions: updater(state.extensions) })),
     hideExtension: (id) =>
       set((state) => ({
-        hide: state.hide.map((ext) =>
+        extensions: state.extensions.map((ext) =>
           ext.id === id ? { ...ext, visible: false } : ext
         ),
       })),
