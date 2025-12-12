@@ -1,4 +1,5 @@
-import logoImg from "../assets/images/logo.svg";
+import React from "react";
+import logoImg from "../assets/images/logo-extension.png";
 import { ToggleTheme } from "./ToggleTheme";
 
 function Header() {
