@@ -19,7 +19,7 @@ function ExtensionCard({ extension, onToggle }: ExtensionCardProps) {
   return (
     <>
       <div className="flex flex-col justify-between rounded-lg bg-gray-800 p-4 shadow">
-        <section className="flex ">
+        <section className="flex">
           <img src={extension.image} alt="extension.image" className="w-14" />
           <div className="mx-3">
             <h3 className="text-lg font-semibold text-white">
