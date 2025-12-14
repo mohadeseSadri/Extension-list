@@ -5,7 +5,6 @@ import { ToggleTheme } from "./ToggleTheme";
 =======
 import logoImg from "../assets/images/logo.svg";
 // import { ToggleTheme } from "./ToggleTheme";
->>>>>>> 47883d9 (Fix style)
 
 function Header() {
   return (
@@ -16,7 +15,7 @@ function Header() {
             <img src={logoImg} alt="App name logo" className="p-2" />
           </a>
 
-          {/* <ToggleTheme /> */}
+          <ToggleTheme />
         </div>
       </header>
     </>
