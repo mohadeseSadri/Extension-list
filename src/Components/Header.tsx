@@ -1,5 +1,5 @@
 import logoImg from "../assets/images/logo-extension.png";
-import { ToggleTheme } from "./ToggleTheme";
+
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
             <img src={logoImg} alt="App name logo" className="p-2" />
           </a>
 
-          <ToggleTheme />
+          
         </div>
       </header>
     </>
