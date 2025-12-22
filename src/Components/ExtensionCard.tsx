@@ -18,8 +18,8 @@ function ExtensionCard({ extension, onToggle }: ExtensionCardProps) {
   const { hideExtension } = useExtensionsStore();
   return (
     <>
-      <div className="flex flex-col justify-between rounded-lg bg-gray-800 p-4 shadow">
-        <section className="flex">
+      <div className="flex flex-col justify-between rounded-lg bg-gray-800 p-4 shadow w-[15rem] md:w-[20rem]">
+        <section className="flex item-center justify-center">
           <img src={extension.image} alt="extension.image" className="w-14" />
           <div className="mx-3">
             <h3 className="text-lg font-semibold text-white">

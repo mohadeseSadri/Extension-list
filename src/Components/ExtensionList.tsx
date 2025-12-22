@@ -27,7 +27,7 @@ function ExtensionList() {
       <div className="p-6">
         <Category filter={filter} setFilter={setFilter} />
         <section className="container mx-auto my-4">
-          <div className="grid grid-cols-1 justify-center gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3 w-100 mx-20">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:mx-8 md:ml-16 ml-2 px-4">
             {extensions && filtered
             .filter((ext) => ext.visible)
             .map((ext) => (

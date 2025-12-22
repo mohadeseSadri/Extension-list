@@ -10,8 +10,8 @@ function Category({ filter, setFilter }: FilterButtonsProps) {
 
   return (
     <>
-      <section className="flex justify-center">
-        <div className="m-3 flex w-[80%] justify-between">
+      <section className="flex justify-center item-center">
+        <div className="m-3 sm:flex w-[80%] sm:justify-between">
           <header>
             <h2 className="text-2xl font-bold">Extensions List</h2>
           </header>
@@ -24,7 +24,7 @@ function Category({ filter, setFilter }: FilterButtonsProps) {
                   type="button"
                   onClick={() => setFilter(btn)}
                   aria-pressed={filter === btn}
-                  className={`mx-1 rounded-2xl bg-[#1F2535] px-3 py-1 ${
+                  className={`mr-2 rounded-2xl bg-[#1F2535] px-3 py-1 mt-2 ${
                     filter === btn
                       ? "bg-red-500 text-white"
                       : "bg-gray-700 text-gray-300 hover:bg-gray-600"
